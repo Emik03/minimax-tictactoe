@@ -6,9 +6,9 @@ Playable tic-tac-toe engine using α-β pruning.
 
 ### Installation
 
-If you are on windows or linux, download the files [here](https://github.com/Emik03/minimax-tictactoe/releases/latest).
+If you are on windows, download the files [here](https://github.com/Emik03/minimax-tictactoe/releases/latest).
 
-For mac users, you need to compile this yourself.
+For mac/linux users, you need to compile this yourself.
 
 ---
 
