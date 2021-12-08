@@ -74,7 +74,7 @@ After that inner method call ends, we [add the result to the vector](https://git
 
 Finally, we [return the best move](https://github.com/Emik03/minimax-tictactoe/blob/master/src/evaluation.rs#L91) by getting the maximum evaluation if the maximizing player is playing, or the minimum evaluation if the minimizing player is playing.
 
-While it takes more memory, we can make it more efficient by implementing α-β (alpha-beta) pruning to make the algorithm faster. The idea is that [each game stores an α value and a β value](https://github.com/Emik03/minimax-tictactoe/blob/master/src/board.rs#L13). α starts out as the most negative number, since it acconuts for the worst case scenario for the maximizing player, and β starts out as the most positive number, since it accounts for the worst case scenario for the minimizing player.
+While it takes more memory, we can make it more efficient by implementing α-β (alpha-beta) pruning to make the algorithm faster. The idea is that [each game stores an α value and a β value](https://github.com/Emik03/minimax-tictactoe/blob/master/src/board.rs#L13). α starts out as the most negative number, since it accounts for the worst case scenario for the maximizing player, and β starts out as the most positive number, since it accounts for the worst case scenario for the minimizing player.
 
 We then [check if the result of the current game exceeds α or β](https://github.com/Emik03/minimax-tictactoe/blob/master/src/evaluation.rs#L79). In the event that it does, it means that we don't need to search this branch and can therefore prune it.
 
